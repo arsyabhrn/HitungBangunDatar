@@ -19,5 +19,10 @@ namespace Perhitungan_Bangun_Datar
         {
             return Math.PI * Math.Pow(radius, 2);
         }
+
+        public override double perimeter()
+        {
+            return 2 * Math.PI * radius;
+        }
     }
 }

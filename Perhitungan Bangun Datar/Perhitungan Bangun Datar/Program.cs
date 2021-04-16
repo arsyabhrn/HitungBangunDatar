@@ -32,6 +32,7 @@ namespace Perhitungan_Bangun_Datar
                             double width = Convert.ToDouble(Console.ReadLine());                            
                             Shape square = new Square(width);
                             Console.WriteLine("Square Area is " + square.area());
+                            Console.WriteLine("Square Perimeter is " + square.perimeter());
                             break;
                         case 2:
                             // code block
@@ -43,6 +44,7 @@ namespace Perhitungan_Bangun_Datar
                             rectangle.Height = height;
                             rectangle.Width = width;
                             Console.WriteLine("Rectangle Area is " + rectangle.Area());
+                            Console.WriteLine("Rectangle Perimeter is " + rectangle.Perimeter());
                             break;
                         case 3:
                             // code block
@@ -50,8 +52,11 @@ namespace Perhitungan_Bangun_Datar
                             width = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Input Your Height (cm)");
                             height = Convert.ToDouble(Console.ReadLine());
-                            Shape triangle = new Triangle(width, height);
+                            Console.WriteLine("Input Your Diagonal (cm)");
+                            double diagonal = Convert.ToDouble(Console.ReadLine());
+                            Shape triangle = new Triangle(width, height, diagonal);
                             Console.WriteLine("Triangle Area is " + triangle.area());
+                            Console.WriteLine("Triangle Perimeter is " + triangle.perimeter());
                             break;
                         case 4:
                             // code block
@@ -59,6 +64,7 @@ namespace Perhitungan_Bangun_Datar
                             double radius = Convert.ToDouble(Console.ReadLine());
                             Shape circle = new Circle(radius);
                             Console.WriteLine("Circle Area is " + circle.area());
+                            Console.WriteLine("Circle Perimeter is " + circle.perimeter());
                             break;
                         case 5:
                             // code block
@@ -66,8 +72,11 @@ namespace Perhitungan_Bangun_Datar
                             width = Convert.ToDouble(Console.ReadLine());
                             Console.WriteLine("Input Your Height (cm)");
                             height = Convert.ToDouble(Console.ReadLine());
-                            Shape parallelogram = new Parallelogram(width, height);
+                            Console.WriteLine("Input Your Diagonal (cm)");
+                            diagonal = Convert.ToDouble(Console.ReadLine());
+                            Shape parallelogram = new Parallelogram(width, height, diagonal);
                             Console.WriteLine("Parallelogram Area is " + parallelogram.area());
+                            Console.WriteLine("Parallelogram Perimeter is " + parallelogram.perimeter());
                             break;
                         default:
                             // code block
