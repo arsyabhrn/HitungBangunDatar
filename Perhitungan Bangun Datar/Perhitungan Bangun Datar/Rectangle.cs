@@ -38,5 +38,10 @@ namespace Perhitungan_Bangun_Datar
         {
             return height * width;
         }
+
+        public double Perimeter()
+        {
+            return 2 * (height + width);
+        }
     }
 }

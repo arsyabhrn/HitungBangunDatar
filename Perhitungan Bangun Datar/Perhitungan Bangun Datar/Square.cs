@@ -19,5 +19,10 @@ namespace Perhitungan_Bangun_Datar
         {
             return Math.Pow(width, 2);
         }
+
+        public override double perimeter()
+        {
+            return 4 * width;
+        }
     }
 }

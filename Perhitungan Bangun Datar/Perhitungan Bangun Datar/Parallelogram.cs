@@ -8,17 +8,23 @@ namespace Perhitungan_Bangun_Datar
 {
     class Parallelogram : Shape
     {
-        double width, height;
+        double width, height, diagonal;
 
-        public Parallelogram(double aWidth, double aHeight)
+        public Parallelogram(double aWidth, double aHeight, double aDiagonal)
         {
             width = aWidth;
             height = aHeight;
+            diagonal = aDiagonal;
         }
 
         public override double area()
         {
             return width * height;
+        }
+
+        public override double perimeter()
+        {
+            return 2 * (width + diagonal);
         }
     }
 }

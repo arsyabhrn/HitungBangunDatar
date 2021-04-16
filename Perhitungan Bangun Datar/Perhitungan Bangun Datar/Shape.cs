@@ -9,5 +9,6 @@ namespace Perhitungan_Bangun_Datar
     abstract class Shape
     {
         public abstract double area();
+        public abstract double perimeter();
     }
 }
